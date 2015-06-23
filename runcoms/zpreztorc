@@ -33,10 +33,10 @@ zstyle ':prezto:load' pmodule \
   'utility' \
   'completion' \
   'prompt' \
+  'dpkg' \
   'git' \
-  'python' \
   'homebrew' \
-
+  'python'
 
 #
 # Editor
