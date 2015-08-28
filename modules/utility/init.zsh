@@ -132,6 +132,13 @@ fi
 alias pbc='pbcopy'
 alias pbp='pbpaste'
 
+# Package update
+if [[ "$OSTYPE" == darwin* ]]; then
+  alias up='brewu'
+else
+  alias up='debU'
+fi
+
 # File Download
 if (( $+commands[curl] )); then
   alias get='curl --continue-at - --location --progress-bar --remote-name --remote-time'
