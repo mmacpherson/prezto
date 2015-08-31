@@ -32,9 +32,10 @@ alias debI='sudo dpkg -i'
 alias debq='apt-cache show'
 
 # Updates the package lists.
-alias debu='sudo apt-get update'
+#alias debu='sudo apt-get update'
 
 # Upgrades outdated packages.
+alias debu='sudo apt-get update && sudo apt-get dist-upgrade'
 alias debU='sudo apt-get update && sudo apt-get dist-upgrade'
 
 # Removes packages.
