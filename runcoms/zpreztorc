@@ -35,6 +35,7 @@ zstyle ':prezto:load' pmodule \
   'prompt' \
   'dpkg' \
   'git' \
+  'osx' \
   'homebrew' \
   'python'
 
