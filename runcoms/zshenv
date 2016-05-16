@@ -9,3 +9,28 @@
 if [[ "$SHLVL" -eq 1 && ! -o LOGIN && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+if [[ "$HOST" -eq gussy ]]; then
+  # -- add Torch stuff
+  # . $HOME/torch/install/bin/torch-activate
+  # -- add cuda
+  export PATH=/usr/local/cuda-7.5/bin:$PATH
+  export LD_LIBRARY_PATH=/usr/local/cuda-7.5/lib64:$LD_LIBRARY_PATH
+  # -- add NodeJS
+  export PATH=${HOME}/.npm-global/bin:$PATH
+  # -- add Android
+  export ANDROID_HOME=/opt/android-sdk-linux
+  export PATH=${ANDROID_HOME}/platform-tools:$PATH
+  export PATH=${ANDROID_HOME}/tools:$PATH
+  # -- add cask (emacs package management)
+  export PATH=${HOME}/.cask/bin:$PATH
+  # -- add cask (emacs package management)
+  export PATH=${HOME}/.cask/bin:$PATH
+  # -- add node-installed
+  export PATH=${HOME}/.npm-global/bin:$PATH
+  export NODE_PATH=${HOME}/.npm-global/lib/node_modules:$PATH
+  # -- add miniconda
+  export PATH=${HOME}/.miniconda/bin:$PATH
+fi
+
+export PATH=$HOME/bin:$PATH
