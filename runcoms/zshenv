@@ -29,8 +29,9 @@ if [[ "$HOST" -eq gussy ]]; then
   # -- add node-installed
   export PATH=${HOME}/.npm-global/bin:$PATH
   export NODE_PATH=${HOME}/.npm-global/lib/node_modules:$PATH
-  # -- add miniconda
-  export PATH=${HOME}/.miniconda/bin:$PATH
 fi
+
+# -- add miniconda
+export PATH=${HOME}/.miniconda/bin:$PATH
 
 export PATH=$HOME/bin:$PATH

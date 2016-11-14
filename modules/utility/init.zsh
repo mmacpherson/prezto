@@ -139,6 +139,10 @@ else
   alias up='debU'
 fi
 
+# Conda update
+alias upcon='brewu'
+
+
 # File Download
 if (( $+commands[curl] )); then
   alias get='curl --continue-at - --location --progress-bar --remote-name --remote-time'
